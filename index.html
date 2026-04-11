@@ -98,9 +98,9 @@ section{padding:6rem 4rem;position:relative;z-index:1;}
 #about{background:linear-gradient(180deg,transparent,rgba(124,58,237,0.03),transparent);}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
 .about-img-wrap{position:relative;display:flex;justify-content:center;}
-.about-img-ring{width:280px;height:280px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--cyan));padding:3px;position:relative;animation:ringRotate 8s linear infinite;}
-@keyframes ringRotate{to{filter:hue-rotate(360deg);}}
-.about-img-inner{width:100%;height:100%;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:5rem;font-weight:800;background:linear-gradient(135deg,var(--bg2),#1a1a2e);}
+.about-img-ring{width:280px;height:280px;border-radius:50%;background:none;padding:0;position:relative;}
+.about-img-inner{width:100%;height:100%;border-radius:50%;background:transparent;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.about-img-inner img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
 .about-text p{color:var(--text-muted);line-height:1.9;font-weight:300;font-size:1rem;margin-bottom:1rem;}
 
 /* SKILLS */
@@ -232,16 +232,7 @@ footer span{color:var(--purple-light);}
       <span class="typewriter" id="typewriter"></span>
       <span class="cursor-blink"></span>
     </div>
-    <p class="hero-bio">I'm genuinely curious about how things work — and that curiosity is what got me into tech. I build full-stack apps, ML models, and real-time systems because I actually want to. I show up, I figure things out, and I'm ready to work.</p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn-primary"><i class="fas fa-arrow-down"></i> View My Work</a>
-      <a href="#contact" class="btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Projects</div></div>
-      <div class="stat"><div class="stat-num">89%</div><div class="stat-label">GPA</div></div>
-      <div class="stat"><div class="stat-num">2</div><div class="stat-label">Hackathons</div></div>
-    </div>
+
   </div>
 </section>
 
@@ -252,7 +243,7 @@ footer span{color:var(--purple-light);}
       <div class="reveal">
         <div class="about-img-wrap">
           <div class="about-img-ring">
-            <div class="about-img-inner">AN</div>
+            <div class="about-img-inner"><img src="profile.jpg" alt="Akshaya Nuthalapati"></div>
           </div>
         </div>
       </div>
@@ -260,9 +251,6 @@ footer span{color:var(--purple-light);}
         <div class="section-label">About Me</div>
         <h2 class="section-title">Curious builder,<br><span>ready to ship</span></h2>
         <div style="height:1px;width:60px;background:linear-gradient(90deg,var(--purple),var(--cyan));margin-bottom:1.5rem;"></div>
-        <p style="color:var(--text-muted);line-height:1.9;font-weight:300;font-size:1rem;margin-bottom:1rem;">I'm genuinely curious about how things work — and that curiosity is what got me into tech. I don't just learn to pass exams, I build things because I actually want to.</p>
-        <p style="color:var(--text-muted);line-height:1.9;font-weight:300;font-size:1rem;margin-bottom:1rem;">Machine learning, full-stack apps, computer vision — I explore whatever catches my interest and see it through to something real. I'm currently in my second year at CMR Technical Campus, Hyderabad.</p>
-        <p style="color:var(--text-muted);line-height:1.9;font-weight:300;font-size:1rem;">I'm still early in my journey, but I show up, I figure things out, and I'm ready to work.</p>
       </div>
     </div>
   </div>
