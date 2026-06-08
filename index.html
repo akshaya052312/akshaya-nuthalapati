@@ -243,7 +243,7 @@ footer span{color:var(--purple-light);}
       <div class="reveal">
         <div class="about-img-wrap">
           <div class="about-img-ring">
-            <div class="about-img-inner"><img src="https://lh3.google.com/d/1g2YtunHSJKSJdCEMGqEJ4rvxvwbqru8i" alt="Akshaya Nuthalapati"></div>
+            <div class="about-img-inner" id="profileImg"></div>
           </div>
         </div>
       </div>
@@ -539,6 +539,15 @@ document.querySelectorAll(".project-card").forEach(card => {
 // MOBILE NAV
 function toggleMobile() { document.getElementById("mobileNav").classList.toggle("open"); }
 function closeMobile() { document.getElementById("mobileNav").classList.remove("open"); }
+
+// LOAD PROFILE IMAGE DYNAMICALLY
+const profileImg = document.getElementById("profileImg");
+const imgUrl = "aHR0cHM6Ly9saDMuZ29vZ2xlLmNvbS9kLzFnMll0dW5IU0pLU0pkQ0VNR3FFNHJ2eHZ3YnFydThi";
+const decodedUrl = atob(imgUrl);
+const img = document.createElement("img");
+img.src = decodedUrl;
+img.alt = "Akshaya Nuthalapati";
+profileImg.appendChild(img);
 </script>
 </body>
 </html>
