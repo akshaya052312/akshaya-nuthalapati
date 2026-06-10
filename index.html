@@ -268,7 +268,7 @@ footer span{color:var(--salmon);}
     <!-- Stats row -->
     <div class="stats-row">
       <div class="stat-card">
-        <div class="stat-num" id="cProjects">0</div>
+        <div class="stat-num"><span id="cProjects">0</span><span style="font-size:1.1rem;">+</span></div>
         <div class="stat-lbl">Projects</div>
       </div>
       <div class="stat-card">
@@ -321,7 +321,7 @@ footer span{color:var(--salmon);}
     <div class="about-inner">
       <div class="reveal">
         <div class="about-photo-wrap">
-          <img class="about-photo" src="https://lh3.google.com/d/1g2YtunHSJKSJdCEMGqEJ4rvxvwbqru8i" alt="Akshaya Nuthalapati"/>
+          <img class="about-photo" src="https://drive.google.com/thumbnail?id=1Jb4L1LV10XZ6t3QzCblpO2wU0nL4UNv-&sz=w800" alt="Akshaya Nuthalapati"/>
           <div class="about-badge">✦ 4th Year · CSIT</div>
         </div>
       </div>
@@ -330,9 +330,16 @@ footer span{color:var(--salmon);}
         <h2 class="sec-title">Curious <em>builder</em></h2>
         <div style="width:50px;height:1px;background:linear-gradient(90deg,var(--salmon),var(--peach));margin-bottom:1.5rem;"></div>
         <div class="about-content">
-          <p>I am passionate about creating useful software and working on creative tech ideas. My main interests are backend systems, web development, and intelligent applications. I enjoy turning ideas into working projects and exploring different tools and frameworks.</p>
-          <p>I have experience working with APIs, databases, and real-time applications. Along with technical skills, I focus on writing clean and efficient code. I like taking part in practical projects that improve my problem-solving ability.</p>
-          <p>I am also interested in learning modern AI technologies and how they can help in daily life. My goal is to grow as a developer and build impactful solutions in the future.</p>
+          <p>
+              I am passionate about building useful software and working on creative technology ideas. I am mainly
+              interested in backend development, web development, and intelligent applications. I enjoy turning ideas into
+              real projects and learning different tools and frameworks.
+          </p>
+          <p>
+              I have experience working with APIs, databases, and real-time applications. I focus on writing clean and
+              efficient code while improving my problem-solving skills through practical projects. I am also interested in
+              modern AI technologies and want to grow as a developer by creating impactful solutions in the future.
+          </p>
         </div>
       </div>
     </div>
@@ -495,9 +502,6 @@ footer span{color:var(--salmon);}
   </div>
 </section>
 
-<footer>
-  <p>Crafted with care by <span>Akshaya Nuthalapati</span> &mdash; Hyderabad, India</p>
-</footer>
 
 <script>
 /* ── Custom cursor ── */
@@ -555,7 +559,7 @@ function animCount(el,target,dur=1200){
 const statsObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
-      animCount(document.getElementById('cProjects'),7);
+      animCount(document.getElementById('cProjects'),10);
       animCount(document.getElementById('cTech'),20);
       statsObs.disconnect();
     }
