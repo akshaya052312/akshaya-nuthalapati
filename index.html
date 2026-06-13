@@ -8,17 +8,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
 :root {
-  --bg:      #1a0e12;
-  --bg2:     #1e1a0e;
-  --bg3:     #0e1a1a;
-  --wine:    #7f384a;
-  --mauve:   #235151;
-  --salmon:  #d2a13a;
-  --peach:   #e8c070;
-  --text:    #f5ede8;
-  --muted:   rgba(245,237,232,0.6);
-  --glass:   rgba(127,56,74,0.08);
-  --gborder: rgba(210,161,58,0.2);
+  --bg:      #040403;
+  --bg2:     #080a08;
+  --bg3:     #0a0f0a;
+  --wine:    #5B7553;
+  --mauve:   #3d5c3d;
+  --salmon:  #5B7553;
+  --peach:   #F4FDFF;
+  --text:    #F4FDFF;
+  --muted:   rgba(244,253,255,0.6);
+  --glass:   rgba(91,117,83,0.08);
+  --gborder: rgba(244,253,255,0.15);
   --font-d:  'Playfair Display', serif;
   --font-b:  'Outfit', sans-serif;
   --font-m:  'JetBrains Mono', monospace;
@@ -28,22 +28,22 @@
 html{scroll-behavior:smooth;}
 body {
   background:
-    radial-gradient(ellipse at 0% 0%, rgba(127,56,74,0.45) 0%, transparent 45%),
-    radial-gradient(ellipse at 100% 0%, rgba(35,81,81,0.45) 0%, transparent 45%),
-    radial-gradient(ellipse at 50% 100%, rgba(210,161,58,0.35) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(127,56,74,0.15) 0%, transparent 60%),
-    #1a0e12;
+    radial-gradient(ellipse at 0% 0%, rgba(91,117,83,0.35) 0%, transparent 45%),
+    radial-gradient(ellipse at 100% 0%, rgba(61,92,61,0.35) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 100%, rgba(244,253,255,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(91,117,83,0.10) 0%, transparent 60%),
+    #040403;
   color:var(--text);font-family:var(--font-b);overflow-x:hidden;
 }
 
-#prog{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg, #7f384a, #235151, #d2a13a, #7f384a);z-index:999;width:0%;transition:width 0.1s;}
+#prog{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg, #5B7553, #F4FDFF, #3d5c3d, #5B7553);z-index:999;width:0%;transition:width 0.1s;}
 
 #cur{position:fixed;width:10px;height:10px;background:var(--salmon);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:screen;transition:width .2s,height .2s;}
 #cur2{position:fixed;width:32px;height:32px;border:1.5px solid rgba(210,161,58,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);mix-blend-mode:screen;transition:width .3s,height .3s;}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.4rem 5vw;display:flex;align-items:center;justify-content:space-between;transition:all .4s;}
 nav.scrolled{background:rgba(26,14,18,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(210,161,58,0.25);padding:0.9rem 5vw;}
-.logo{font-family:var(--font-d);font-size:1.3rem;font-weight:900;font-style:italic;background:linear-gradient(135deg, #7f384a, #d2a13a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.logo{font-family:var(--font-d);font-size:1.3rem;font-weight:900;font-style:italic;background:linear-gradient(135deg, #5B7553, #F4FDFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .nav-links{display:flex;gap:2.5rem;list-style:none;}
 .nav-links a{font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-weight:500;transition:color .3s;position:relative;padding-bottom:3px;}
 .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:linear-gradient(90deg,var(--salmon),var(--peach));transition:width .3s;}
@@ -67,7 +67,7 @@ nav.scrolled{background:rgba(26,14,18,0.92);backdrop-filter:blur(20px);border-bo
 .hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--salmon);}
 .hero-name{font-family:var(--font-d);font-size:clamp(2.8rem,4.5vw,5.2rem);font-weight:900;line-height:1.05;margin-bottom:1.2rem;}
 .hero-name .first{display:block;color:var(--text);}
-.hero-name .last{display:block;background:linear-gradient(135deg, #7f384a, #d2a13a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic;}
+.hero-name .last{display:block;background:linear-gradient(135deg, #5B7553, #F4FDFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic;}
 .hero-role{font-size:1.05rem;color:var(--muted);font-weight:300;margin-bottom:0.7rem;min-height:1.8rem;}
 .role-text{color:var(--salmon);font-weight:500;}
 .blink{display:inline-block;width:2px;height:1em;background:var(--salmon);animation:blink .8s step-end infinite;vertical-align:middle;margin-left:1px;}
